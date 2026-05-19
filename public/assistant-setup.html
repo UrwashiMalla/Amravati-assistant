@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amravati Sahayak — Name Assistant</title>
+    <script>
+      (function () {
+        var t = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/chat.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="top-bar-controls">
+        <label for="langSelect" data-i18n="language">Language</label>
+        <select id="langSelect" aria-label="Language">
+          <option value="en">English</option>
+          <option value="hi">हिंदी</option>
+          <option value="mr">मराठी</option>
+        </select>
+        <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </header>
+
+    <main class="setup-page">
+      <div class="setup-card">
+        <h2 data-i18n="nameAssistant">Name your assistant</h2>
+        <p data-i18n="setupDesc">Give your AI guide a friendly name, or skip to use the default.</p>
+        <input
+          type="text"
+          id="assistantName"
+          data-i18n-placeholder="assistantPlaceholder"
+          placeholder="e.g. Amra, Vidya, Sahayak"
+          maxlength="32"
+        />
+        <div class="setup-actions">
+          <button type="button" class="btn btn-primary" id="continueBtn" data-i18n="continue">
+            Continue
+          </button>
+          <button type="button" class="btn btn-ghost" id="skipBtn" data-i18n="skip">Skip</button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/js/assistant-setup.js"></script>
+  </body>
+</html>

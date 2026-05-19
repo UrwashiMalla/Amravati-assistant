@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Amba Devi Temple",
+    "rating": 4.6,
+    "reviews": 3200,
+    "address": "Near Rajkamal Square, Amravati, Maharashtra 444601",
+    "lat": 20.9334,
+    "lng": 77.7522
+  },
+  {
+    "name": "Chikhaldara Hill Station",
+    "rating": 4.5,
+    "reviews": 8500,
+    "address": "Chikhaldara, Amravati District, Maharashtra",
+    "lat": 21.2097,
+    "lng": 77.7214
+  },
+  {
+    "name": "Melghat Tiger Reserve",
+    "rating": 4.4,
+    "reviews": 2100,
+    "address": "Chikhaldara, Amravati District, Maharashtra",
+    "lat": 21.4111,
+    "lng": 76.9333
+  },
+  {
+    "name": "Wadali Tank Garden",
+    "rating": 4.2,
+    "reviews": 980,
+    "address": "Wadali, Amravati, Maharashtra",
+    "lat": 20.9512,
+    "lng": 77.7688
+  },
+  {
+    "name": "Shri Bhakti Dham Temple",
+    "rating": 4.5,
+    "reviews": 1500,
+    "address": "Badnera Road, Amravati, Maharashtra",
+    "lat": 20.9268,
+    "lng": 77.7645
+  },
+  {
+    "name": "Gugamal National Park",
+    "rating": 4.3,
+    "reviews": 650,
+    "address": "Chikhaldara, Amravati District, Maharashtra",
+    "lat": 21.3542,
+    "lng": 76.9518
+  }
+]

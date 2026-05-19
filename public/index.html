@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amravati Sahayak — Login</title>
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body class="login-page">
+    <div class="top-bar">
+      <div class="top-bar-controls">
+        <label for="langSelect" data-i18n="language">Language</label>
+        <select id="langSelect" aria-label="Language">
+          <option value="en">English</option>
+          <option value="hi">हिंदी</option>
+          <option value="mr">मराठी</option>
+        </select>
+      </div>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+
+    <main class="login-split">
+      <div class="login-brand">
+        <div class="brand-content">
+          <div class="brand-icon" aria-hidden="true">🛕</div>
+          <h1 data-i18n="siteName">Amravati Sahayak</h1>
+          <p class="brand-desc" data-i18n="siteDesc">Your personal guide to places, events, and life in Amravati.</p>
+          <ul class="brand-features">
+            <li data-i18n="feature1">Discover local places and events</li>
+            <li data-i18n="feature2">Get personalized recommendations</li>
+            <li data-i18n="feature3">Connect with your community</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="login-form-pane">
+        <div class="login-card">
+          <h2 class="form-title" id="formTitle" data-i18n="login">Log in</h2>
+          <p class="form-subtitle" data-i18n="formSubtitle">Enter your details to continue</p>
+
+          <div class="auth-tabs">
+            <button type="button" id="tabLogin" class="active" data-i18n="tabLogin">Login</button>
+            <button type="button" id="tabRegister" data-i18n="tabRegister">Sign up</button>
+          </div>
+
+          <form id="authForm">
+            <div class="form-group hidden" id="usernameGroup">
+              <label for="username" data-i18n="username">Username</label>
+              <input type="text" id="username" name="username" autocomplete="username" />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="password" data-i18n="password">Password</label>
+              <div class="password-input-group">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  autocomplete="current-password"
+                  minlength="6"
+                />
+                <button type="button" class="password-toggle" id="passwordToggle" aria-label="Toggle password visibility">👁️</button>
+              </div>
+            </div>
+            <p id="authError" class="error-msg" role="alert"></p>
+            <button type="submit" class="btn btn-primary" id="submitBtn" data-i18n="login">Log in</button>
+          </form>
+
+          <div class="divider">or</div>
+
+          <button type="button" class="btn btn-google" id="googleBtn" data-i18n="googleLogin">
+            <svg class="google-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19c1.33-4.02 5.08-7.91 10.18-7.91z"/>
+              <path fill="#34A853" d="M46.98 24.55c0-1.47-.11-2.91-.25-4.34H24v8.34h12.94c-.58 2.96-2.26 5.48-4.77 7.18l7.73 5.99c4.46-4.09 7.52-10.13 7.52-17.17z"/>
+              <path fill="#4285F4" d="M10.88 39.44c-1.88-1.36-3.53-3.09-4.86-5.06l-7.98 6.19C6.51 42.62 14.62 48 24 48c5.04 0 9.84-1.44 13.94-3.98l-7.73-5.99c-2.15 1.29-4.84 2.04-7.64 2.04-5.33 0-9.76-3.1-11.74-7.63z"/>
+              <path fill="#FBBC05" d="M5.02 24c0-1.45.174-2.86.466-4.22l-7.98-6.19C.92 16.46 0 20.12 0 24s.92 7.54 2.466 10.41l7.973-6.19c-.291-1.35-.466-2.77-.466-4.22z"/>
+            </svg>
+            <span data-i18n="googleLogin">Continue with Google</span>
+          </button>
+
+          <p class="demo-note" data-i18n="demoHint">
+            Configure Firebase in public/js/firebase-config.js for full auth. Until then, demo login works with any credentials.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/js/auth.js"></script>
+  </body>
+</html>

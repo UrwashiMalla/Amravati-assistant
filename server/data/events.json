@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Amravati Mahotsav",
+    "field": "cultural",
+    "date": "2026-12-15",
+    "venue": "Chikhaldara Road, Amravati",
+    "description": "Annual cultural festival with music, food stalls, and local art."
+  },
+  {
+    "title": "Vidarbha Cricket League — Amravati Round",
+    "field": "sports",
+    "date": "2026-06-20",
+    "venue": "Vidarbha Cricket Association Ground",
+    "description": "Regional cricket tournament featuring local clubs."
+  },
+  {
+    "title": "Science & Innovation Fair",
+    "field": "education",
+    "date": "2026-08-10",
+    "venue": "Sant Gadge Baba Amravati University",
+    "description": "Student projects and workshops on science and technology."
+  },
+  {
+    "title": "Amba Devi Temple Fair",
+    "field": "religious",
+    "date": "2026-10-05",
+    "venue": "Amba Devi Temple, Amravati",
+    "description": "Traditional fair with processions and local crafts."
+  },
+  {
+    "title": "Amravati Farmers Market Week",
+    "field": "agriculture",
+    "date": "2026-07-01",
+    "venue": "City Center, Amravati",
+    "description": "Showcase of Vidarbha produce, organic farming demos, and workshops."
+  }
+]
