@@ -17,7 +17,7 @@ async function verifyToken(req, res, next) {
       req.user = { uid: 'demo-user', demo: true };
       return next();
     }
-    if (!isAuthEnabled()) {
+    if (!isAuthEnabled) {
       req.user = { uid: 'demo-user', demo: true };
       return next();
     }
